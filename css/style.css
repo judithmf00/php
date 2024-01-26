@@ -1,0 +1,171 @@
+/*Fuentes*/
+@font-face {
+    font-family: "nevis";
+    src: url("fonts/FontsFree-Net-Dream-Avenue.ttf") format("DreamAvenue");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', sans-serif; */
+
+
+/*VARIABLES*/
+:root{
+    --fuenteNevis: "nevis";
+    --fuenteBebas: 'Bebas Neue', sans-serif;
+    --colorVerde: #37411a;
+}
+
+/*ESTILOS GLOBALES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+.containerNav{
+    background-image: url(./img/bgCabecera.png);
+    background-repeat: no-repeat;
+    background-position: center -50px;
+    height: 420px;
+    width: 100%;
+}
+
+    .containerNav ul{
+        display: flex;
+        justify-content: center;
+
+        padding-top: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--colorVerde);
+        gap: 50px;
+        font-size: 24px;
+        font-family: var(--fuenteBebas);
+    }
+
+        .containerNav ul li{
+            list-style: none;
+            cursor: pointer;
+        }
+        .containerNav ul li a{
+            color: #37411a;
+            text-decoration: none;
+        }
+
+/*MAIN*/
+#btnInicioSesion{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    border-radius: 10px;
+    margin: 40px 10px;
+    padding: 5px 20px;
+    color: white;
+    background-color: #37411a;
+    font-size: 20px;
+    z-index: 1;
+}
+.container{
+    position: relative;
+}
+.containerMain{
+    background-color: var(--colorVerde);
+    border-radius: 200px 200px 0px 0px;
+    padding: 20px 50px;
+    top: 500px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+    .containerMain p {
+        background-color: white;
+        border-radius: 30px;
+        padding: 30px;
+        margin: 20px;
+        line-height: 30px;
+        width: 1100px;
+        margin: 0 auto;
+    }
+    .containerMain h1 {
+        text-align: center;
+        padding: 30px;
+        font-size: 80px;
+        color: rgba(255, 255, 255, 0.822);
+    }
+
+.containerMain__plantas{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0px 20px;
+    width: 1000px;
+    margin: 0 auto;
+}
+    .planta{
+        width: 200px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+        .planta img{
+            width: 100%;
+            border-bottom: 2px solid #37411a;
+        }
+        .planta p{
+            width: 100%;
+            color: #37411a;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: var(--fuenteNevis);
+        }
+        .planta input{
+            background-color: #37411a;
+            width: 70%;
+            margin: 0 auto;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        } 
+
+    .containerMain__pedidos *{
+        background-color: white;
+        margin: 20px 0px;
+        color: #37411a;
+        border-radius: 10px;
+    }
+        .containerMain__pedidos img{
+            width: 200px;
+        }
+        .containerMain__pedidos h2{
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid #37411a;
+        }
+        .containerMain__pedidos p{
+            width: 100%;
+        }
+
+.pedido__plantas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+    .pedido__info p{
+        padding: 0;
+        text-align: center;
+    }
+/*FOOTER*/
+footer{
+    background-color: var(--colorVerde);
+    float: left;
+}
